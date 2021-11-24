@@ -1,0 +1,761 @@
+/* --Font Perso-- */
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+
+/* General */
+*
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2
+{
+    font-size: 16.5px;
+}
+
+h3
+{
+    font-size: 15px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.marginNul
+{
+    margin: 0;
+}
+
+.textBold
+{
+    font-weight: bold;
+}
+
+.paddingLeft
+{
+    padding-left: 20px;
+}
+
+/* .gen-padding
+{
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+
+/* Info */
+
+.info
+{
+    color: #0065FC;
+}
+
+.info-fit
+{
+    border-radius: 25px;
+    border: 2px solid #F2F2F2 ;
+    width: 17px;
+    height: 17px;
+   
+}
+
+div .info-fit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.flex-info
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Header */
+
+header
+{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo
+{
+    margin-top: 40px;
+    width: 500px;
+}
+
+nav li
+{
+    padding-top: 60px;
+    font-size: 13px;
+}
+
+nav a
+{
+    padding: 5px;
+    letter-spacing: 0.5px
+}
+
+nav li a:hover{
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    padding-top: 58px;
+}
+
+
+
+/* Search */
+.cube
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color:#F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 0;
+}
+
+input[type="text"]
+{
+    font-size: 14px;
+}
+
+.searchbar
+{
+    margin: 0;
+}
+
+.btn-search-mobile
+{
+    display: none;
+}
+
+.cadre
+{
+    display: flex;
+    border-top: 2px solid;
+    border-bottom: solid;
+    border-color:#F2F2F2;
+    width: 150px;
+}
+
+section
+{
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 18px;
+
+}
+
+form
+{
+    display: flex;
+    width: 400px;
+    margin: 0;
+}
+
+input
+{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border: none;
+    justify-content: flex-start;
+    outline: none;
+    font-weight : bold ;
+}
+
+
+.send
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    width: 115px;
+    border: none;
+    background-color:#0065FC;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight : bold ;
+    font-size: 10px;
+}
+
+/* Filtre */
+
+#filtre
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div h3
+{
+    width: 50px;
+    font-size: 13px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.category
+{
+    height: 34px;
+    border: solid;
+    border-left: none;
+    border-radius: 50px;
+    border-color:#F2F2F2 ;
+    border-width: 2px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+.icon-cat
+{
+    color: #0065FC;
+    background-color:#DEEBFF ;
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    margin: 0;
+    justify-content: center;
+    height: 34px;
+}
+.category:hover
+{
+    background-color:#F2F2F2 ;
+    background-position: left bottom;
+}
+
+span
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-self:center;
+
+}
+
+
+.text-cat
+{
+    margin: 8px;
+    font-size: 11.2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    flex-direction: row;
+
+}
+
+/* .economique
+{
+    width: auto;
+}
+
+.familial
+{
+    width: auto;
+}
+
+.romantique
+{
+    width: auto;
+}
+
+.animaux
+{
+    width: auto;
+    
+} */
+
+/* --Cartes-- */
+
+/* .cards
+{
+    background-color:#F2F2F2;
+    border-radius: 15px;
+    width: 70%;
+    height: 500px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section .section-text
+{
+    flex: 1 100%;
+    margin: 25px;
+}
+
+
+.cards:first-child
+{
+   align-self: flex-start;
+}
+
+.section-text
+{
+    flex: 1;
+    width: 100%;
+    height: 15px;
+}
+
+section article
+{
+    padding: 1%;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: white;
+    width: 160px;
+    display: flex;
+    align-content: space-around;
+    height: 150px;
+}
+
+article img
+{
+    display: flex;
+    width: 190px;
+    height: 80px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} */
+
+/* --Carte box 1--  */
+
+.marseille
+{
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color:#F2F2F2 ;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.populaire
+{
+    flex: 1;
+    height: 650px;
+    border-radius: 10px;
+    background-color:#F2F2F2;
+}
+
+.cartes-flex
+{
+    display: flex;
+    margin: 18px;
+}
+
+.box-1
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.hotels
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 150px;
+    height: 160px;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.image
+{
+    width: 150px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+
+.titre-section
+{
+    padding-left: 26px;
+    float: left;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+.description
+{
+    float: left;
+}
+
+h4
+{
+    font-size: 12px;
+    margin: auto;
+}
+
+.description p
+{
+    font-size: 12px;
+    margin: 0;
+}
+
+/* --Carte box-2-- */
+
+.top-image
+{
+    width: 80px;
+    height: 90px;
+}
+
+.top-host
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 260px;
+    height: 120px;
+    padding: 1%;
+    display: flex;
+    
+}
+
+.description-aside p
+{
+    font-size: 12px;
+    margin: 0;
+}
+
+.box-2
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+
+/* --Etoiles-- */
+/* .score 
+{
+    display: block;
+    font-size: 8px;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .score-wrap {
+    display: inline-block;
+    position: relative;
+    height: 19px;
+    margin: 0;
+  }
+  
+  .score .stars-active {
+    color: #0065FC;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .score .stars-inactive {
+    color:#F2F2F2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+    /* overflow: hidden; */
+  } */
+
+
+
+
+
+/* Tablettes */
+
+/* @media screen and (min-width: 992px) */
+
+@media screen and (max-width)
+{
+    #filtre
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    h3
+    {
+        margin-left: 8px;
+        padding-bottom: 5px;
+    }
+    .text-cat
+    {
+        padding: 20px;
+    }
+
+    .category 
+    {
+        /* flex-grow: 1; */
+        margin: 6px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .active {
+        order: -1;
+        flex: 1 0 100%;
+    }
+    
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 768px)
+{
+    
+    *
+    {
+        margin: 0;
+    }
+    header
+    {
+        margin: 0;
+        flex-direction: column; 
+        justify-content:center;
+    }
+    h2
+    {
+        padding-top: 30px;
+        padding-left: 15px;
+        font-size: 25px;
+    }
+    p
+    {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    a
+    {
+        font-size: 20px;
+    }
+    .logo
+    {
+        display: flex;
+        flex-grow: initial;
+        padding-left: 140px;
+    }
+    /* div .logo
+    {
+        display: flex;
+        flex: auto;
+        align-content: center;
+        justify-items: center;
+    } */
+
+    /* --Filtres-- */
+
+    .category
+    {
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    #filtre
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h3
+    {
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+    .text-cat
+    {
+        font-size: 20px;
+    }
+
+    /* --Barre de recherche-- */
+
+    .btn-search
+    {
+       display: none;
+    }
+    button
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+    .btn-search-mobile
+    {
+    display: initial;
+    }
+    .cube
+    {
+        width: 60px;
+        height: 60px;
+        margin-left: 15px;
+    }
+    section
+    {
+       
+        width: 345px;
+        display: flex;
+    }
+    #destination
+    {
+        width: 200px;
+    }
+    p .info-text
+   {
+       font-size: 14px;
+   } 
+
+    /* .gen-padding
+    {
+        padding: 15px;
+    } */
+    input[type="text"]
+    {
+    font-size: 18px;
+    }
+    nav ul
+    {
+        width: 100%;
+    }
+    nav li
+    {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    nav li a:hover{
+        border-top: none;
+    }
+    nav li:hover{
+        border-bottom-color:#0065FC;
+    }
+    a
+    {
+       /* font-size: 16px; */
+    }
+    div h3
+    {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    form
+    {
+       width: 350px;
+       /* display: flex;
+       justify-content: center; */
+    }
+    input
+    {
+       width: 230px;
+    }
+    section
+    {
+    /* display: flex;
+    justify-content: center; */
+    }
+    div 
+    .cadre
+    {
+       width: 800px;
+    }
+
+    .category
+    {
+        height: 50px;
+    }
+    .icon-cat
+    {
+        height: 51px;
+        width: 50px;
+    }
+    .text-cat
+    {
+        font-size: 17px;
+        margin: 10px;
+    }
+
+    div #filtre
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* --Info-- */
+
+    div .flex-info
+    {
+        display: flex;
+        align-items: baseline;
+       padding: 15px;
+    }
+    div .info-fit
+    {
+        min-width: 20px;
+
+    }
+
+    .
+
+}
