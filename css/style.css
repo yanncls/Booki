@@ -424,9 +424,7 @@ h4
 
 /* Tablettes */
 
-/* @media screen and (min-width: 992px) */
-
-@media screen and ()
+@media screen and (max-width: 992px)
 {
     #filtre
     {
@@ -594,10 +592,7 @@ h4
     nav li:hover{
         border-bottom-color:#0065FC;
     }
-    a
-    {
-       /* font-size: 16px; */
-    }
+    
     div h3
     {
         font-size: 18px;
@@ -659,7 +654,4 @@ h4
         min-width: 20px;
 
     }
-
-    .
-
 }
