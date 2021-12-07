@@ -1,0 +1,359 @@
+/* General */
+
+html {
+  max-width: 768px;
+  min-width: 375px;
+  padding: 0;
+}
+
+.header {
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-frame {
+  margin: 0;
+}
+
+.no-visual {
+  font-size: 18px;
+}
+
+.if-mobile {
+  padding-top: 30px;
+  margin-left: 8%;
+  font-size: 21px;
+  margin-right: 8%;
+}
+
+.searchbar > p {
+  margin-left: 8%;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.logo {
+  display: flex;
+  flex-grow: initial;
+  justify-content: center;
+  width: 100%;
+}
+
+/* --Filtres-- */
+
+.category {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+#filtre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-cat {
+  font-size: 20px;
+}
+
+.filtre-cat {
+  display: flex;
+}
+
+/* --Barre de recherche-- */
+
+.btn-search {
+  display: none;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.btn-search-mobile {
+  display: initial;
+}
+
+.cube {
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.filter-frame {
+  display: flex;
+}
+
+#destination {
+  width: 200px;
+}
+
+p .info-text {
+  font-size: 14px;
+}
+
+.info-text {
+  font-size: 16px;
+}
+
+input[type="text"] {
+  font-size: 18px;
+}
+
+.nav .ul {
+  width: 100%;
+}
+
+.nav a {
+  width: 50%;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.nav a:hover {
+  border-top: none;
+  border-bottom: 3px solid #0065fc;
+}
+
+.filtre h3 {
+  font-size: 18px;
+  width: 100%;
+  margin-left: 19px;
+  margin-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input {
+  width: 230px;
+}
+
+.cadre {
+  width: 60%;
+  max-width: 300px;
+  margin: 0 -20px;
+  padding-left: 34px;
+}
+
+.category {
+  height: 50px;
+}
+
+.icon-cat {
+  height: 51px;
+  width: 50px;
+}
+
+.text-cat {
+  font-size: 17px;
+  margin: 10px;
+}
+
+.filtre {
+  margin-left: 3%;
+}
+
+/* --Info-- */
+
+div .flex-info {
+  padding: 15px;
+}
+
+div .info-fit {
+  min-width: 25px;
+  max-width: 25px;
+  min-height: 25px;
+  max-height: 25px;
+}
+
+.flex-info {
+  margin-left: 8%;
+}
+
+/* Cards */
+
+.wrap-media {
+  display: flex;
+  margin: 0 !important;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.populaire {
+  width: 100%;
+}
+
+.top-image {
+  height: 140px;
+  min-width: 160px;
+}
+
+.selection,
+.populaire {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0px;
+}
+
+.selection {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: unset;
+  height: fit-content;
+}
+
+.hotels {
+  width: auto;
+  height: auto;
+  margin: 0px 28px 25px 28px;
+  padding: 2%;
+}
+
+.top-host {
+  margin: 0px 28px 10px 28px;
+}
+
+.selection > h3 {
+  margin: 3%;
+  min-width: 0;
+  font-size: 21px;
+  width: auto;
+}
+
+.image {
+  width: 100%;
+  height: 130px;
+}
+
+.popular-title h3 {
+  font-size: 21px;
+  padding-left: 40px;
+}
+
+.description-aside h4,
+.description-aside p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.description-aside p {
+  padding: 0;
+  font-size: 14px;
+}
+
+.stars-active,
+.stars-inactive {
+  font-size: 14px;
+}
+
+.description h4,
+.description p {
+  font-size: 16px;
+}
+
+.description p {
+  padding: 0;
+}
+
+p {
+  padding: 0;
+}
+
+/* Activities */
+
+.second-box {
+  margin: 0;
+  padding: 0;
+}
+
+.activities {
+  flex-direction: column;
+  margin: 0px 28px 25px 28px;
+}
+
+.container-l,
+.container-m {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.l-picture,
+.s-picture,
+.m-picture,
+.xs-picture {
+  height: 150px;
+}
+
+.container-xs,
+.container-s {
+  margin-bottom: 25px;
+}
+
+.above {
+  width: 100%;
+}
+
+.more {
+  padding-left: 40px;
+}
+
+.second-box h2 {
+  margin: 0;
+  padding: 50px 40px 20px;
+  font-size: 21px;
+}
+
+.location {
+  font-size: 17px;
+  margin-left: 18px;
+  height: 25px;
+}
+
+.row {
+  flex-direction: column;
+}
+
+.footer {
+  height: fit-content;
+}
+
+.footer-col {
+  padding-left: 10%;
+  margin-top: 25px;
+}
+
+.footer-col h4,
+.footer-col li a {
+  font-size: 19px;
+}
+
+.footer-col h4 {
+  margin-bottom: 27px;
+}
+
+.spacing {
+  margin-bottom: 13px;
+}

@@ -5,10 +5,12 @@
 
     <!-- Meta -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- feuille de style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablette.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/smartphone.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="assets/">
 
@@ -31,42 +33,42 @@
 </head>
 
 <body>
-    <main>
+    <main class="first-frame">
 
         <!-- Header -->
 
-        <header class="flex">
+        <header class="flex header">
             <div class="logo">
                 <img src="assets/images/logo/Booki_3x.svg" alt="booki">
             </div>
 
             <!-- Navigation -->
-            <nav class="flex">
-                <ul class="flex">
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
+            <nav class="flex nav">
+                <div class="flex ul">
+                    <div class="li"><a class="no-visual" href="#hotelsAnchor">Hébergements</a></div>
+                    <div class="li"><a class="no-visual" href="#activitiesAnchor">Activités</a></div>
+                </div>
             </nav>
         </header>
 
         <!-- Search -->
 
         <div class="searchbar">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h2 class="if-mobile">Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="filter-frame">
-                <form method="POST" action="#">
+                <form class="form" method="POST" action="#">
                     <div class="marginNul"><label class="cube" for="destination"><i
                                 class="fas fa-map-marker-alt fa-lg"></i></label>
                     </div>
                     <div class="cadre marginNul paddingLeft">
-                        <input type="text" name="destination" id="destination" value="Marseille, France">
+                        <input class="input" type="text" name="destination" id="destination" value="Marseille, France">
                     </div>
                     <div class="send marginNul">
-                        <button>
-                            <span class="btn-search">Rechercher
+                        <button class="button">
+                            <span class="btn-search span">Rechercher
                             </span>
-                            <span class="btn-search-mobile"><i class="fas fa-search"></i>
+                            <span class="btn-search-mobile"><i class="fas fa-search fa-lg"></i>
                             </span>
                         </button>
                     </div>
@@ -80,23 +82,23 @@
             <div class="filtre">
                 <h3>Filtres</h3>
                 <div class="fitre-cat">
-                    <div class="category"><span class="icon-cat"><i class="fas fa-money-bill-wave"></i></span><span
+                    <div class="category"><span class="icon-cat span"><i class="fas fa-money-bill-wave"></i></span><span
                             class="text-cat economique">
                             Économique</span></div>
-                    <div class="category"><span class="icon-cat"><i class="fas fa-child"></i></span><span
+                    <div class="category"><span class="icon-cat span"><i class="fas fa-child"></i></span><span
                             class="text-cat familial">
                             Familial</span></div>
-                    <div class="category"><span class="icon-cat"><i class="fas fa-heart"></i></span><span
+                    <div class="category"><span class="icon-cat span"><i class="fas fa-heart"></i></span><span
                             class="text-cat romantique">
                             Romantique</span></div>
-                    <div class="category last"><span class="icon-cat"><i class="fas fa-dog"></i></span><span
+                    <div class="category last"><span class="icon-cat span"><i class="fas fa-dog"></i></span><span
                             class="text-cat animaux">Animaux
                             autorisés</span></div>
                 </div>
             </div>
 
             <div class="flex-info">
-                <div class="info-fit"><i class="fas fa-info fa-xs info"></i></div>
+                <div class="info-fit"><i class="fas fa-info fa-sm info"></i></div>
                 <p class="info-text"> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
@@ -106,7 +108,7 @@
     <div id="main-box" class="wrap-media">
         <section class="selection">
 
-            <h3 class="titre-section">Hébergements à Marseille</h3>
+            <h3 id="hotelsAnchor" class="titre-section">Hébergements à Marseille</h3>
             <div class="box-1">
                 <article class="hotels">
                     <img class="image" src="assets/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -249,7 +251,7 @@
                     </div>
                 </article>
             </div>
-            <a class="more" href="#"><b>Afficher plus</b></a>
+            <a class="more no-visual" href="#"><b>Afficher plus</b></a>
         </section>
 
         <section class="populaire">
@@ -265,14 +267,14 @@
                         <h4>Hôtel Le soleil du matin</h4>
                         <p>Nuit à partir de 128€</p>
                         <div class="rating-top">
-                            <span class="stars-inactive">
+                            <span class="stars-inactive span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
-                            <span class="stars-active">
+                            <span class="stars-active span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -289,14 +291,14 @@
                         <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                         <p>Nuit à partir de 71€</p>
                         <div class="rating-top">
-                            <span class="stars-inactive">
+                            <span class="stars-inactive span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
-                            <span class="stars-active">
+                            <span class="stars-active span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -312,14 +314,14 @@
                         <h4>Hôtel Tout bleu et Blanc</h4>
                         <p>Nuit à partir de 68€</p>
                         <div class="rating-top">
-                            <span class="stars-inactive">
+                            <span class="stars-inactive span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </span>
-                            <span class="stars-active">
+                            <span class="stars-active span">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -333,7 +335,7 @@
     </div>
 
     <div class="second-box">
-        <h2>Activités à Marseille</h2>
+        <h2 id="activitiesAnchor">Activités à Marseille</h2>
         <article class="activities">
             <div class="container-l">
                 <img class="l-picture" src="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -379,25 +381,21 @@
             <div class="row">
                 <div class="footer-col">
                     <h4>A propos</h4>
-                    <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
-                    </ul>
+                        <div><a class="no-visual spacing" href="#">Fonctionnement du site</a></div>
+                        <div><a class="no-visual spacing" href="#">Conditions générales de vente</a></div>
+                        <div><a class="no-visual spacing" href="#">Données et confidentialité</a></div>
                 </div>
                 <div class="footer-col">
                     <h4>Nos Hébergements</h4>
-                    <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Soumettre votre hôtel</a></li>
-                    </ul>
+                    
+                        <div><a class="no-visual spacing" href="#">Charte qualité</a></div>
+                        <div><a class="no-visual spacing" href="#">Soumettre votre hôtel</a></div>
+                    
                 </div>
                 <div class="footer-col">
                     <h4>Assistance</h4>
-                    <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
+                        <div><a class="no-visual spacing" href="#">Centre d'aide</a></div>
+                        <div><a class="no-visual spacing" href="#">Nous contacter</a></div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,97 @@
+/* General */
+
+html {
+  max-width: 992px;
+  min-width: 768px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.text-cat {
+  padding: 20px;
+}
+
+.category {
+  margin: 6px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  order: -1;
+  flex: 1 0 100%;
+}
+
+/* Cards */
+
+.wrap-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.populaire {
+  display: flex;
+  flex: 1 1 100%;
+  height: fit-content;
+}
+
+.selection {
+  flex-direction: column;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.box-1 {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hotels {
+  margin: 5px;
+}
+
+.image {
+  width: 100%;
+  height: 90px;
+}
+
+.more {
+  padding: 0 25px;
+  bottom: 15px;
+}
+
+.top-host {
+  padding: 1%;
+  margin: 1%;
+}
+
+.top-image {
+  height: 140px;
+  min-width: 160px;
+}
+
+.description h4 {
+  font-size: 14px;
+  margin: 1px 5px;
+}
+
+.description-aside h4,
+.description-aside p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.stars-active,
+.stars-inactive {
+  font-size: 12px;
+}
+
+.location {
+  font-size: 14px;
+}
