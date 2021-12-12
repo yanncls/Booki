@@ -197,8 +197,9 @@ div .info-fit {
 }
 
 .top-image {
-  height: 140px;
-  min-width: 160px;
+  height: 100%;
+  min-width: 40%;
+  max-width: 40%;
 }
 
 .selection,
@@ -215,6 +216,7 @@ div .info-fit {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10%;
+  width: auto;
 }
 
 .box-1 {
@@ -234,6 +236,7 @@ div .info-fit {
 
 .top-host {
   margin: 0px 28px 10px 28px;
+  height: 140px;
 }
 
 .selection > h3 {
@@ -245,7 +248,7 @@ div .info-fit {
 
 .image {
   width: 100%;
-  height: 130px;
+  height: 140px;
 }
 
 .popular-title h3 {
@@ -298,18 +301,20 @@ p {
 .container-m {
   width: 100%;
   margin-bottom: 25px;
+  height: 230px;
 }
 
 .l-picture,
 .s-picture,
 .m-picture,
 .xs-picture {
-  height: 150px;
+  height: 160px;
 }
 
 .container-xs,
 .container-s {
   margin-bottom: 25px;
+  height: 230px;
 }
 
 .above {
@@ -322,7 +327,7 @@ p {
 
 .second-box h2 {
   margin: 0;
-  padding: 50px 40px 20px;
+  padding: 25px 40px 20px;
   font-size: 21px;
 }
 
