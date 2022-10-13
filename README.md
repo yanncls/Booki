@@ -1,5 +1,4 @@
 # <a href="https://yanncls.github.io/Booki/">Booki</a>
-<br/>
 
 ## Un site de réservation en ligne de logement de vacances, inspiré de AirBnB
 
